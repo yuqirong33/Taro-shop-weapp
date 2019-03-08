@@ -1,0 +1,164 @@
+
+.cartWrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+.cartWrap .panelLeft {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: calc(100vh - 120rpx);
+  background-color: #f8f8f8;
+}
+.cartWrap .panelLeft .titleDom {
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #131313;
+  text-align: center;
+  border-bottom: 1rpx solid #d8d8d8;
+}
+.cartWrap .panelLeft .titleActive {
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  text-align: center;
+  background-color: #2083e4;
+}
+.cartWrap .panelRight {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  height: calc(100vh - 120rpx);
+}
+.cartWrap .panelRight .tabHead {
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  text-align: center;
+  background-color: #2083e4;
+}
+.cartWrap .panelRight .tabCon {
+  display: inline-block;
+  padding: 20rpx 0;
+}
+.cartWrap .panelRight .tabCon .itemImgWrap {
+  float: left;
+  width: 220rpx;
+  height: 220rpx;
+}
+.cartWrap .panelRight .tabCon .itemImgWrap .itemImg {
+  width: 100%;
+  height: 100%;
+}
+.cartWrap .panelRight .tabCon .itemTxtWrap {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 40rpx;
+}
+.cartWrap .panelRight .tabCon .itemTxtWrap .itemTxt {
+  display: inline-block;
+  font-size: 32rpx;
+  color: #777;
+  padding: 10rpx 0;
+}
+.cartWrap .panelRight .tabCon .itemTxtWrap .itemCon {
+  font-size: 28rpx;
+  color: #131313;
+  padding-bottom: 10rpx;
+}
+.cartWrap .panelRight .tabCon .itemTxtWrap .itemPrice {
+  position: relative;
+  color: #d82b2f;
+}
+.cartWrap .panelRight .tabCon .itemTxtWrap .itemPrice .iconWrap {
+  float: right;
+  width: 80rpx;
+  height: 80rpx;
+}
+.cartWrap .buyingWrap {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120rpx;
+  background-color: #666;
+  font-family: "Microsoft YaHei UI", serif;
+}
+.cartWrap .buyingWrap .buyingIcon {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background-color: #000;
+  margin: 20rpx 0 0 20rpx;
+}
+.cartWrap .buyingWrap .buyingIcon .badgeDom {
+  position: absolute;
+  right: -6PX;
+  top: -14rpx;
+  z-index: 1;
+  -webkit-transform: translate(50%, 0);
+      -ms-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+  font-size: 20rpx;
+  text-align: center;
+  color: #fff;
+  height: 28rpx;
+  line-height: 28rpx;
+  padding: 0 10rpx;
+  border-radius: 14rpx 14rpx 14rpx 0;
+  overflow: hidden;
+  background: #FF4949;
+  -webkit-box-shadow: 0 4rpx 8rpx 0 rgba(233, 59, 61, 0.2);
+          box-shadow: 0 4rpx 8rpx 0 rgba(233, 59, 61, 0.2);
+}
+.cartWrap .buyingWrap .moneyDom {
+  position: absolute;
+  z-index: 99;
+  top: 40rpx;
+  left: 128rpx;
+  color: #fff;
+  font-size: 36rpx;
+}
+.cartWrap .buyingWrap .moneyDom .moneyTxt {
+  margin-right: 10rpx;
+}
+.cartWrap .buyingWrap .goPay {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  width: 200rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  color: #fff;
+  background-color: #2083e4;
+}
+.cartWrap:after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}

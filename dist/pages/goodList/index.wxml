@@ -1,0 +1,36 @@
+<block>
+    <view class="cartWrap">
+        <scroll-view scroll-y="true" bindscrolltolower="onReachBottom" class="panelLeft">
+            <view wx:key="id" bindtap="handleClick" class="{{anchorIndex2 === 'anchor' + index ? 'titleActive' : 'titleDom'}}" wx:for="{{goodList}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{index}}">{{item.title}}</view>
+        </scroll-view>
+        <scroll-view scroll-y="true" scroll-into-view="{{anchorIndex}}" scroll-with-animation="{{true}}" bindscroll="onScrollView" class="panelRight" id="panelRight">
+            <view wx:key="id" wx:for="{{goodList}}" wx:for-item="list" wx:for-index="index">
+                <view class="tabHead" id="{{'anchor' + index}}">{{list.title}}</view>
+                <view class="tabCon" wx:key="id" bindtap="goGoodInfo" wx:for="{{list.proList}}" wx:for-item="item" wx:for-index="_anonIdx" data-e-tap-so="this" data-e-tap-a-a="{{item.id}}" data-e-tap-a-b="{{item.name}}" data-e-tap-a-c="{{item.price}}">
+                    <view class="itemImgWrap">
+                        <image class="itemImg" src="{{item.imageUrl}}" mode="widthFix"></image>
+                    </view>
+                    <view class="itemTxtWrap"><text class="itemTxt">{{item.name}}</text>
+                        <view class="itemCon">{{item.content}}</view>
+                        <view class="itemPrice">￥{{item.price}}
+                            <view class="iconWrap" catchtap="addGood" data-e-tap-so="this" data-e-tap-a-a="{{item.id}}" data-e-tap-a-b="{{item.name}}" data-e-tap-a-c="{{item.price}}">
+                                <at-icon value="add-circle" __triggerObserer="{{ _triggerObserer }}" size="20" color="#2083e4"></at-icon>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+        <view class="buyingWrap">
+            <view class="buyingIcon" bindtap="buyingInfo" data-e-tap-so="this">
+                <view class="badgeDom" style="{{anonymousState__temp}}">{{badgeNum}}</view>
+                <at-icon value="shopping-cart" __triggerObserer="{{ _triggerObserer }}" size="30" color="#fff"></at-icon>
+            </view>
+            <view class="moneyDom">合计：<text class="moneyTxt">￥{{totalMoney}}</text>
+            </view>
+            <view class="goPay" bindtap="goCart" data-e-tap-so="this">去结算</view>
+        </view>
+        <cart-good-list isOpen="{{isOpen}}" __triggerObserer="{{ _triggerObserer }}" bindonisopen="callback" __fn_onIsOpen="{{true}}"></cart-good-list>
+        <loading isLoading="{{isLoading}}" __triggerObserer="{{ _triggerObserer }}"></loading>
+    </view>
+</block>

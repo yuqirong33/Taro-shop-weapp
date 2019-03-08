@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "at-icon": "../../npm/taro-ui/dist/weapp/components/icon/index",
+    "loading": "../../components/Loading/index"
+  },
+  "navigationBarTitleText": "我的订单",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTextStyle": "white"
+}

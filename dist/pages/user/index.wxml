@@ -1,0 +1,78 @@
+<block>
+    <view class="homeWrap">
+        <scroll-view scroll-y="true" scroll-with-animation="{{true}}" class="scrollDom">
+            <view class="headWrap">
+                <view class="userInfoWrap">
+                    <view class="avatarWrap">
+                        <image class="avatarImg" src="{{avatar}}"></image>
+                    </view>
+                    <view class="nickName">{{nickName}}</view>
+                </view>
+                <image class="backImg" src="{{avatar}}"></image>
+            </view>
+            <view class="iconListWrap">
+                <view class="iconList">
+                    <view class="iconItem" bindtap="goOrder" data-e-tap-so="this" data-e-tap-a-a="01">
+                        <at-icon value="lightning-bolt" __triggerObserer="{{ _triggerObserer }}" size="30" color="#999"></at-icon>
+                        <view class="iconItemTxt">全部订单</view>
+                    </view>
+                    <view class="iconItem" bindtap="goOrder" data-e-tap-so="this" data-e-tap-a-a="02">
+                        <at-icon value="heart-2" __triggerObserer="{{ _triggerObserer }}" size="30" color="#999"></at-icon>
+                        <view class="iconItemTxt">待收货</view>
+                    </view>
+                    <view class="iconItem" bindtap="goOrder" data-e-tap-so="this" data-e-tap-a-a="03">
+                        <at-icon value="heart" __triggerObserer="{{ _triggerObserer }}" size="30" color="#999"></at-icon>
+                        <view class="iconItemTxt">待支付</view>
+                    </view>
+                </view>
+            </view>
+            <view class="gridListWrap">
+                <view class="gridList">
+                    <view class="gridItem" bindtap="goUserEdit" data-e-tap-so="this">
+                        <view class="gridItemIcon">
+                            <at-icon value="lightning-bolt" __triggerObserer="{{ _triggerObserer }}" size="30" color="#999"></at-icon>
+                        </view>
+                        <view class="gridItemTxt">
+                            <view class="gridItemTitle">收货人</view>
+                            <view class="gridItemCon">{{consignee}}</view>
+                        </view>
+                    </view>
+                    <view class="gridItem" bindtap="goUserEdit" data-e-tap-so="this">
+                        <view class="gridItemIcon">
+                            <at-icon value="lightning-bolt" __triggerObserer="{{ _triggerObserer }}" size="30" color="#999"></at-icon>
+                        </view>
+                        <view class="gridItemTxt">
+                            <view class="gridItemTitle">收货地址</view>
+                            <view class="gridItemCon">{{address}}</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="gridList">
+                    <view class="gridItem" bindtap="goUserEdit" data-e-tap-so="this">
+                        <view class="gridItemIcon">
+                            <at-icon value="lightning-bolt" __triggerObserer="{{ _triggerObserer }}" size="30" color="#999"></at-icon>
+                        </view>
+                        <view class="gridItemTxt">
+                            <view class="gridItemTitle">联系电话</view>
+                            <view class="gridItemCon">{{phone}}</view>
+                        </view>
+                    </view>
+                    <view class="gridItem">
+                        <view class="gridItemIcon">
+                            <at-icon value="lightning-bolt" __triggerObserer="{{ _triggerObserer }}" size="30" color="#999"></at-icon>
+                        </view>
+                        <view class="gridItemTxt">
+                            <view class="gridItemTitle">我的收藏</view>
+                            <view class="gridItemCon">...</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="sysList">
+                <view class="sysItem">用户反馈</view>
+                <view class="sysItem">关于我们</view>
+            </view>
+        </scroll-view>
+        <global-footer isActive="04" __triggerObserer="{{ _triggerObserer }}"></global-footer>
+    </view>
+</block>

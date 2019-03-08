@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "at-toast": "../../npm/taro-ui/dist/weapp/components/toast/index"
+  },
+  "navigationBarTitleText": "我的订单",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTextStyle": "white"
+}

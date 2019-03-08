@@ -1,0 +1,30 @@
+<block>
+    <view class="homeWrap">
+        <swiper indicator-color="#999" indicator-active-color="#fff" circular="{{true}}" indicator-dots="{{true}}" autoplay="{{true}}">
+            <block wx:if="{{anonymousState__temp}}">
+                <swiper-item wx:key="id" wx:for="{{imgList}}" wx:for-item="img" wx:for-index="_anonIdx">
+                    <image class="slideImg" src="{{img.imgUrl}}"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="iconList">
+            <block wx:if="{{anonymousState__temp2}}">
+                <view class="iconItem" wx:key="id" bindtap="goGoodList" wx:for="{{iconList}}" wx:for-item="icon" wx:for-index="_anonIdx2" data-e-tap-so="this" data-e-tap-a-a="{{icon.id}}">
+                    <view class="iconWrap">
+                        <at-icon value="{{icon.iconType}}" __triggerObserer="{{ _triggerObserer }}" size="28" color="#fff"></at-icon>
+                    </view>
+                    <view class="iconTitle">{{icon.title}}</view>
+                </view>
+            </block>
+        </view>
+        <view class="logoWrap">
+            <image class="logoImg" src="{{logoImgUrl}}"></image>
+        </view>
+        <view class="titleDom">精选单品</view>
+        <single singleList="{{singleList}}" __triggerObserer="{{ _triggerObserer }}"></single>
+        <special moreList="{{moreList}}" __triggerObserer="{{ _triggerObserer }}"></special>
+        <more moreList="{{moreList}}" __triggerObserer="{{ _triggerObserer }}"></more>
+        <loading isLoading="{{isLoading}}" __triggerObserer="{{ _triggerObserer }}"></loading>
+        <global-footer isActive="01" __triggerObserer="{{ _triggerObserer }}"></global-footer>
+    </view>
+</block>

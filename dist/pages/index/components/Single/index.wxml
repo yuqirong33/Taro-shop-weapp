@@ -1,0 +1,13 @@
+<block>
+    <view class="singleWrap">
+        <block wx:if="{{anonymousState__temp}}">
+            <view class="singleItemWrap" wx:key="id" bindtap="goGoodInfo" wx:for="{{singleList}}" wx:for-item="single" wx:for-index="_anonIdx" data-e-tap-so="this" data-e-tap-a-a="{{single.id}}" data-e-tap-a-b="{{single.name}}" data-e-tap-a-c="{{single.price}}">
+                <view class="singleTitle">{{single.name}}</view>
+                <view class="singleCon">{{single.content}}</view>
+                <view class="singleImgWrap">
+                    <image class="singleImg" src="{{single.imgUrl}}"></image>
+                </view>
+            </view>
+        </block>
+    </view>
+</block>

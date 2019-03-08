@@ -1,0 +1,27 @@
+<block>
+    <view class="orderContainer">
+        <view class="searchWrap">
+            <input class="searchInput" type="text" placeholder="请输入商品名称" value="{{searchVal}}" bindinput="handleSearchValChange" data-e-input-so="this" />
+            <view class="removeIcon" bindtap="removeSearchVal">
+                <at-icon value="close-circle" __triggerObserer="{{ _triggerObserer }}" size="20" color="#ccc"></at-icon>
+            </view>
+        </view>
+        <scroll-view class="scrollView" scroll-y="{{true}}" scroll-with-animation="{{true}}">
+            <block wx:if="{{anonymousState__temp}}">
+                <view class="cardWrap" wx:key="id" wx:for="{{orderList}}" wx:for-item="order" wx:for-index="_anonIdx">
+                    <view class="cardDom">
+                        <view class="cardImgWrap">
+                            <image class="cardImg" src="{{order.img}}"></image>
+                        </view>
+                        <view class="cardCon">
+                            <view class="cardTitle">{{order.title}}</view>
+                            <view class="cardType">{{order.type === '02' ? '待收货' : '待支付'}}</view>
+                            <view class="cardTxt">{{order.txt}}</view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </scroll-view>
+        <loading isLoading="{{isLoading}}" __triggerObserer="{{ _triggerObserer }}"></loading>
+    </view>
+</block>

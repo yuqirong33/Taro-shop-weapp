@@ -1,0 +1,64 @@
+
+.shadePanel {
+  position: absolute;
+  z-index: 7;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.shadePanel .buyingInfo {
+  position: absolute;
+  z-index: 99;
+  bottom: 120rpx;
+  left: 0;
+  width: 100vw;
+  min-height: 80rpx;
+}
+.shadePanel .buyingInfo .orderDom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #fff;
+}
+.shadePanel .buyingInfo .orderDom .buyingItemTxt {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.shadePanel .buyingInfo .orderDom .buyingItemTxt:nth-of-type(2) {
+  color: #d82b2f;
+}
+.shadePanel .buyingInfo .orderDom .buyingItemOperate {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.shadePanel .buyingInfo .orderDom .buyingItemOperate .buyingItemNum {
+  margin: 0 10rpx;
+}
+.shadePanel .buyingInfo .orderDom .buyingItemOperate .buyingItemIcon {
+  display: inline-block;
+  width: 80rpx;
+}
+.shadePanel .buyingInfo .orderDom .inlineView {
+  display: inline-block;
+}
+.shadePanel .nullCartTxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  font-size: 60rpx;
+  white-space: nowrap;
+  color: #fff;
+}

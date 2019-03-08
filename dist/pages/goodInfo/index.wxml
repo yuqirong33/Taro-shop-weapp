@@ -1,0 +1,49 @@
+<block>
+    <view class="goodInfoWrap">
+        <scroll-view scroll-y="true" scroll-with-animation="{{true}}" class="scrollDom">
+            <swiper indicator-color="#999" indicator-active-color="#333" circular="{{true}}" indicator-dots="{{true}}" autoplay="{{true}}">
+                <block wx:if="{{anonymousState__temp2}}">
+                    <swiper-item class="swipImgWrap" wx:key="id" wx:for="{{dataList}}" wx:for-item="data" wx:for-index="_anonIdx">
+                        <image src="{{data.img}}" class="swipImg"></image>
+                    </swiper-item>
+                </block>
+            </swiper>
+            <view class="briefWrap">
+                <view class="briefTop"><text>{{fetchData.name}}</text><text class="briefSalesVolume">销量：{{fetchData.salesVolume}}</text>
+                </view>
+                <view class="briefMid">{{fetchData.brief}}</view>
+                <view class="briefBottom">￥{{fetchData.price}}</view>
+            </view>
+            <block wx:if="{{anonymousState__temp3}}">
+                <view class="detailWrap" wx:key="id" wx:for="{{dataList}}" wx:for-item="data" wx:for-index="_anonIdx2">
+                    <view class="detailTitle">{{data.title}}</view>
+                    <view class="detailTxt">{{data.txt}}</view>
+                    <view class="detailImgWrap" wx:key="id">
+                        <image src="{{data.img}}" class="detailImg"></image>
+                    </view>
+                </view>
+            </block>
+        </scroll-view>
+        <view class="goodInfoBottom">
+            <view class="bottomIconWrap">
+                <view class="bottomIcon">
+                    <at-icon value="home" __triggerObserer="{{ _triggerObserer }}" size="30" color="#fff" bindonclick="goHomepage" __fn_onClick="{{true}}" data-e-onclick-so="this"></at-icon>
+                    <view class="iconTxt">首页</view>
+                </view>
+                <view class="bottomIcon" bindtap="goGoodList" data-e-tap-so="this">
+                    <at-icon value="bullet-list" __triggerObserer="{{ _triggerObserer }}" size="30" color="#fff"></at-icon>
+                    <view class="iconTxt">分类</view>
+                </view>
+                <view class="bottomIcon" bindtap="buyingInfo" data-e-tap-so="this">
+                    <view class="badgeDom" style="{{anonymousState__temp}}">{{badgeNum}}</view>
+                    <at-icon value="shopping-cart" __triggerObserer="{{ _triggerObserer }}" size="30" color="#fff"></at-icon>
+                    <view class="iconTxt">购物车</view>
+                </view>
+            </view>
+            <view class="addToCart" bindtap="addGood" data-e-tap-so="this" data-e-tap-a-a="{{id}}" data-e-tap-a-b="{{name}}" data-e-tap-a-c="{{price}}">加入购物车</view>
+            <view class="goPay" bindtap="goPay">去结算</view>
+        </view>
+        <cart-good-list isOpen="{{isOpen}}" __triggerObserer="{{ _triggerObserer }}" bindonisopen="callback" __fn_onIsOpen="{{true}}"></cart-good-list>
+        <loading isLoading="{{isLoading}}" __triggerObserer="{{ _triggerObserer }}"></loading>
+    </view>
+</block>

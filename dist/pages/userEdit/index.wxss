@@ -1,0 +1,40 @@
+
+.userEditWrap {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 30rpx;
+}
+.userEditWrap .infoItem {
+  border-bottom: 1rpx solid #d8d8d8;
+  height: 100rpx;
+}
+.userEditWrap .infoItem .prefixDom {
+  float: left;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #666;
+  font-size: 32rpx;
+}
+.userEditWrap .infoItem .inputDom {
+  float: left;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #999;
+  font-size: 32rpx;
+}
+.userEditWrap .infoItem .inputNode {
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.userEditWrap .submitBtn {
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 auto;
+  margin-top: 60rpx;
+  background-color: #2083e4;
+  width: 500rpx;
+  padding: 8rpx;
+  color: #fff;
+  text-align: center;
+  border-radius: 8rpx;
+}

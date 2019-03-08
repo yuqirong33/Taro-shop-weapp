@@ -1,0 +1,20 @@
+<block>
+    <view class="footer">
+        <view class="{{isActive === '01' ? 'footerIconActive' : 'footerIcon'}}" bindtap="goHref" data-e-tap-so="this" data-e-tap-a-a="01">
+            <at-icon value="home" __triggerObserer="{{ _triggerObserer }}" size="30" color="{{isActive === '01' ? '#2083e4' : '#999'}}"></at-icon>
+            <view class="footerTxt">首页</view>
+        </view>
+        <view class="footerIcon" bindtap="goHref" data-e-tap-so="this" data-e-tap-a-a="02">
+            <at-icon value="bullet-list" __triggerObserer="{{ _triggerObserer }}" size="30" color="{{isActive === '02' ? '#2083e4' : '#999'}}"></at-icon>
+            <view class="footerTxt">分类</view>
+        </view>
+        <view class="footerIcon" bindtap="goHref" data-e-tap-so="this" data-e-tap-a-a="03">
+            <at-icon value="shopping-cart" __triggerObserer="{{ _triggerObserer }}" size="30" color="{{isActive === '03' ? '#2083e4' : '#999'}}"></at-icon>
+            <view class="footerTxt">购物车</view>
+        </view>
+        <button class="{{isActive === '04' ? 'footerIconActive' : 'footerIcon'}}" bindtap="goHref" open-type="getUserInfo" data-e-tap-so="this" data-e-tap-a-a="04">
+            <at-icon value="user" __triggerObserer="{{ _triggerObserer }}" size="30" color="{{isActive === '04' ? '#2083e4' : '#999'}}"></at-icon>
+            <view class="footerTxt">我的</view>
+        </button>
+    </view>
+</block>

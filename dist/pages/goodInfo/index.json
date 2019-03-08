@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "at-icon": "../../npm/taro-ui/dist/weapp/components/icon/index",
+    "cart-good-list": "../../components/CartGoodList/index",
+    "loading": "../../components/Loading/index"
+  },
+  "navigationBarTitleText": "商品详情",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTextStyle": "white"
+}

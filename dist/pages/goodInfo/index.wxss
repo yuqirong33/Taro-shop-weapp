@@ -1,0 +1,155 @@
+
+.goodInfoWrap {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Microsoft YaHei UI", serif;
+}
+.goodInfoWrap .scrollDom {
+  height: calc(100vh - 120rpx);
+}
+.goodInfoWrap .swipImgWrap {
+  width: 100%;
+  height: 150rpx;
+}
+.goodInfoWrap .swipImgWrap .swipImg {
+  width: 100%;
+  height: 100%;
+}
+.goodInfoWrap .briefWrap {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20rpx 30rpx;
+  border-top: 1rpx solid #d8d8d8;
+  border-bottom: 1rpx solid #d8d8d8;
+}
+.goodInfoWrap .briefWrap .briefTop {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 36rpx;
+}
+.goodInfoWrap .briefWrap .briefTop .briefSalesVolume {
+  float: right;
+  font-size: 28rpx;
+  color: #666;
+}
+.goodInfoWrap .briefWrap .briefMid {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  color: #666;
+  padding: 16rpx 0;
+}
+.goodInfoWrap .briefWrap .briefBottom {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 40rpx;
+  color: #d82b2f;
+}
+.goodInfoWrap .detailWrap {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20rpx 30rpx;
+  background-color: #f8f8f8;
+}
+.goodInfoWrap .detailWrap .detailTitle {
+  font-size: 40rpx;
+  text-align: center;
+  font-weight: 600;
+}
+.goodInfoWrap .detailWrap .detailTxt {
+  font-size: 32rpx;
+  text-align: center;
+  color: #666;
+  padding: 16rpx 0;
+}
+.goodInfoWrap .detailWrap .detailImgWrap {
+  width: 600rpx;
+  height: 300rpx;
+  margin: 0 auto;
+  border-radius: 16rpx;
+  -webkit-box-shadow: 3rpx 3rpx 3rpx 3rpx rgba(212, 212, 212, 0.5);
+          box-shadow: 3rpx 3rpx 3rpx 3rpx rgba(212, 212, 212, 0.5);
+  overflow: hidden;
+}
+.goodInfoWrap .detailWrap .detailImgWrap .detailImg {
+  width: 100%;
+  height: 100%;
+}
+.goodInfoWrap .detailConWrap:nth-of-type(odd) {
+  background-color: #fff;
+}
+.goodInfoWrap .goodInfoBottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 8;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 120rpx;
+  background-color: #666;
+}
+.goodInfoWrap .goodInfoBottom .bottomIconWrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+.goodInfoWrap .goodInfoBottom .bottomIconWrap .bottomIcon {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+.goodInfoWrap .goodInfoBottom .bottomIconWrap .bottomIcon .iconTxt {
+  font-size: 28rpx;
+  color: #fff;
+}
+.goodInfoWrap .goodInfoBottom .bottomIconWrap .bottomIcon .badgeDom {
+  position: absolute;
+  right: 6PX;
+  top: -10rpx;
+  z-index: 1;
+  -webkit-transform: translate(50%, 0);
+      -ms-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+  font-size: 20rpx;
+  text-align: center;
+  color: #fff;
+  height: 28rpx;
+  line-height: 28rpx;
+  padding: 0 10rpx;
+  border-radius: 14rpx 14rpx 14rpx 0;
+  overflow: hidden;
+  background: #FF4949;
+  -webkit-box-shadow: 0 4rpx 8rpx 0 rgba(233, 59, 61, 0.2);
+          box-shadow: 0 4rpx 8rpx 0 rgba(233, 59, 61, 0.2);
+}
+.goodInfoWrap .goodInfoBottom .addToCart {
+  width: 30%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  background-color: #ee7600;
+  color: #fff;
+}
+.goodInfoWrap .goodInfoBottom .goPay {
+  width: 30%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  background-color: #2083e4;
+  color: #fff;
+}

@@ -1,0 +1,14 @@
+<block>
+    <view class="moreWrap">
+        <view class="moreH1">更多推荐</view>
+        <block wx:if="{{anonymousState__temp}}">
+            <view class="moreItemWrap" wx:key="id" bindtap="goGoodInfo" wx:for="{{moreList}}" wx:for-item="more" wx:for-index="_anonIdx" data-e-tap-so="this" data-e-tap-a-a="{{more.id}}" data-e-tap-a-b="{{more.name}}" data-e-tap-a-c="{{more.price}}">
+                <view class="moreImgWrap">
+                    <image class="moreImg" src="{{more.imgUrl}}"></image>
+                </view>
+                <view class="moreTitle">{{more.name}}</view>
+                <view class="morePrice">￥{{more.price}}</view>
+            </view>
+        </block>
+    </view>
+</block>

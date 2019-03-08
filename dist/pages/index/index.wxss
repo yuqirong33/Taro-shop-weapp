@@ -1,0 +1,56 @@
+
+.homeWrap {
+  font-family: "Microsoft YaHei UI", serif;
+  background-color: #f6f6f6;
+  padding-bottom: 120rpx;
+}
+.homeWrap .slideImg {
+  width: 100%;
+  height: 100%;
+}
+.homeWrap .titleDom {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #131313;
+  padding: 20rpx 0 20rpx 50rpx;
+}
+.homeWrap .iconList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 30rpx 0;
+}
+.homeWrap .iconList .iconItem {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.homeWrap .iconList .iconItem .iconWrap {
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #2083e4;
+  border-radius: 50%;
+}
+.homeWrap .iconList .iconItem .iconTitle {
+  font-size: 30rpx;
+  color: #666;
+  text-align: center;
+  padding-top: 10rpx;
+}
+.homeWrap .logoWrap {
+  width: 660rpx;
+  height: 160rpx;
+  margin: 0 auto;
+  border-radius: 30rpx;
+  overflow: hidden;
+}
+.homeWrap .logoWrap .logoImg {
+  width: 100%;
+  height: 100%;
+}

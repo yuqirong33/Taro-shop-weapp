@@ -1,0 +1,19 @@
+<block>
+    <view class="shadePanel" style="{{anonymousState__temp}}" bindtap="shadeNone">
+        <view class="buyingInfo" style="{{anonymousState__temp2}}">
+            <block wx:if="{{anonymousState__temp4}}">
+                <view class="orderDom" wx:key="id" wx:for="{{cart}}" wx:for-item="good" wx:for-index="_anonIdx"><text class="buyingItemTxt">{{good.name}}</text><text class="buyingItemTxt">￥{{good.price * good.num}}</text>
+                    <view class="buyingItemOperate">
+                        <view class="buyingItemIcon" catchtap="subtractNum" data-e-tap-so="this" data-e-tap-a-a="{{good.id}}">
+                            <at-icon value="subtract-circle" __triggerObserer="{{ _triggerObserer }}" size="18" color="#2083e4"></at-icon>
+                        </view><text class="buyingItemNum">{{good.num}}</text>
+                        <view class="buyingItemIcon" catchtap="addGood" data-e-tap-so="this" data-e-tap-a-a="{{good.id}}">
+                            <at-icon value="add-circle" __triggerObserer="{{ _triggerObserer }}" size="18" color="#2083e4"></at-icon>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+        <view class="nullCartTxt" style="{{anonymousState__temp3}}">购物车是空的</view>
+    </view>
+</block>

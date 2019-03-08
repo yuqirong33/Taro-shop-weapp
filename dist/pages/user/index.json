@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "at-icon": "../../npm/taro-ui/dist/weapp/components/icon/index",
+    "global-footer": "../../components/GlobalFooter/index"
+  },
+  "navigationBarTitleText": "个人中心",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTextStyle": "white"
+}

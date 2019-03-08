@@ -1,0 +1,18 @@
+<block>
+    <view class="loadingWrap" style="{{anonymousState__temp}}">
+        <view class="sk-circle">
+            <view class="sk-circle1"></view>
+            <view class="sk-circle2"></view>
+            <view class="sk-circle3"></view>
+            <view class="sk-circle4"></view>
+            <view class="sk-circle5"></view>
+            <view class="sk-circle6"></view>
+            <view class="sk-circle7"></view>
+            <view class="sk-circle8"></view>
+            <view class="sk-circle9"></view>
+            <view class="sk-circle10"></view>
+            <view class="sk-circle11"></view>
+            <view class="sk-circle12"></view>
+        </view>
+    </view>
+</block>

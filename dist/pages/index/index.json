@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "at-icon": "../../npm/taro-ui/dist/weapp/components/icon/index",
+    "single": "./components/Single/index",
+    "special": "./components/Special/index",
+    "more": "./components/More/index",
+    "loading": "../../components/Loading/index",
+    "global-footer": "../../components/GlobalFooter/index"
+  },
+  "navigationBarTitleText": "首页",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTextStyle": "white"
+}

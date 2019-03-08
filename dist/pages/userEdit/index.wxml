@@ -1,0 +1,24 @@
+<block>
+    <view class="userEditWrap">
+        <view class="infoItem">
+            <view class="prefixDom">收货人：</view>
+            <view class="inputDom">
+                <input type="text" value="{{consignee}}" bindchange="onConsigneeChange" class="inputNode" data-e-change-so="this" />
+            </view>
+        </view>
+        <view class="infoItem">
+            <view class="prefixDom">收货地址：</view>
+            <view class="inputDom">
+                <input type="text" value="{{address}}" bindchange="onAddressChange" class="inputNode" data-e-change-so="this" />
+            </view>
+        </view>
+        <view class="infoItem">
+            <view class="prefixDom">联系电话：</view>
+            <view class="inputDom">
+                <input type="text" value="{{phone}}" bindchange="onPhoneChange" class="inputNode" data-e-change-so="this" />
+            </view>
+        </view>
+        <view class="submitBtn" bindtap="submitEdit" data-e-tap-so="this">提交</view>
+        <at-toast isOpened="{{isOpen}}" __triggerObserer="{{ _triggerObserer }}" text="修改成功" icon="heart-2"></at-toast>
+    </view>
+</block>
